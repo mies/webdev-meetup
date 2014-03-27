@@ -8,7 +8,7 @@ var _ = Describe("Web App", func() {
 
     Context("Retrieve the main page", func() {
         It("returns a 200 Status Code", func() {
-            Request("GET", "/home", HandleIndex)
+            Request("GET", "/", HandleIndex)
             Expect(response.Code).To(Equal(200))
         })
     })
